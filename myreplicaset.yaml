@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nirmal-rc
+  label:
+    app: myapp
+ spec:
+   template:
+     metadata:
+       name: nirmal-pod
+       labels:
+         myapp: nirmal
+     spec:
+       containers:
+       - name: web
+       image: nginx
+    replicas: 4
+    selector:
+      matchLabels:
+      myapp: nirmal 

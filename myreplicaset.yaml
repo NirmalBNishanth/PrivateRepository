@@ -9,7 +9,7 @@ spec:
     metadata:
       name: nirmal-pod
       labels: 
-        myapp: jai
+        myapp: nirmal
     spec:
       containers:
       - name: web

@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jai-deployment
+  name: nirmal-deployment
   labels:
-    myapp: jai
+    myapp: nirmal
 spec:
   replicas: 1
   selector:
     matchLabels:
-      myapp: jai
+      myapp: nirmal
   template:
     metadata:
       labels:
-        myapp: jai
+        myapp: nirmal
     spec:
       containers:
       - name: web
